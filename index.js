@@ -42,10 +42,10 @@ function addressAt(index, linkedList, collection) {
   }
 }
 
-let collection = {rnadnm: {name: 'Alexandra', next: 'masjdrandm'},
-    masjdrandm: {name: 'Kirstin', next: 'ntrandm'},
-    ntrandm: {name: 'Juliet', next: null}
-  }
+// let collection = {rnadnm: {name: 'Alexandra', next: 'masjdrandm'},
+//     masjdrandm: {name: 'Kirstin', next: 'ntrandm'},
+//     ntrandm: {name: 'Juliet', next: null}
+//   }
 
 function indexAt(node, collection, linkedList) {
   let index = 0;
