@@ -86,7 +86,7 @@ function insertNodeAt(index, address, linkedList, collection) {
     new_node.next = node_before.next;
     node_before.next = address;
   }
-  current_node = collection[current_node.next];
+  return new_node.next;
 
   /*
   1. find node at index-1 (node_before)
