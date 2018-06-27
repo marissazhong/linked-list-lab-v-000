@@ -57,7 +57,7 @@ function indexAt(node, collection, linkedList) {
   } else if (current_node == node) {
     return 1;
   } else {
-    while (current_node.next != null) {
+    while (index < Object.keys(collection).length) {
       if (current_node == node) {
         return index;
       } else {
