@@ -83,6 +83,8 @@ function insertNodeAt(index, address, linkedList, collection) {
     for (let i = 2; i < index; i++) {
       node_before = collection[node_before.next];
     }
+    new_node.next = node_before.next;
+    node_before.next = address;
   }
   current_node = collection[current_node.next];
 
