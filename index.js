@@ -107,5 +107,5 @@ function insertNodeAt(index, address, linkedList, collection) {
 // console.log(insertNodeAt(1, 'ajhsak', linkedList, collection));
 
 function deleteNodeAt() {
-
+  
 }
