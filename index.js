@@ -108,7 +108,18 @@ function insertNodeAt(index, address, linkedList, collection) {
 
 function deleteNodeAt(index, linkedList, collection) {
   let head = collection[linkedList];
+  let node_before = collection[head.next];
   if (index == 0) {
-
+    head = node_before;
+    return nil;
+  } else if (index == 1) {
+    new_node.next = head.next;
+    head.next = address;
+  } else {
+    for (let i = 2; i < index; i++) {
+      node_before = collection[node_before.next];
+    }
+    new_node.next = node_before.next;
+    node_before.next = address;
   }
 }
