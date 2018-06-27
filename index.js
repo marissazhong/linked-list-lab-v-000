@@ -80,7 +80,7 @@ function insertNodeAt(index, address, linkedList, collection) {
     new_node.next = head.next;
     head.next = address;
   } else {
-    for (let i = 1; i < index; i++) {
+    for (let i = 2; i < index; i++) {
       node_before = collection[node_before.next];
     }
   }
