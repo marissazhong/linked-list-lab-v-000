@@ -77,7 +77,12 @@ function insertNodeAt(index, address, linkedList, collection) {
     head = new_node;
     return linkedList;
   } else if (index == 1) {
-    
+    new_node.next = head.next;
+    head.next = address;
+  } else {
+    for (let i = 2; i <= index; i++) {
+      current_node = collection[current_node.next];
+    }
   }
   current_node = collection[current_node.next];
 
