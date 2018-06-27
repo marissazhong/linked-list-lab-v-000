@@ -103,7 +103,7 @@ function insertNodeAt(index, address, linkedList, collection) {
 //   whana: firstNode,
 //   ajhsak: newNode}
 // let linkedList = 'whana'
-// 
+//
 // console.log(insertNodeAt(1, 'ajhsak', linkedList, collection));
 
 function deleteNodeAt() {
