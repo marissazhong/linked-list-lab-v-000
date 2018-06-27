@@ -106,6 +106,9 @@ function insertNodeAt(index, address, linkedList, collection) {
 //
 // console.log(insertNodeAt(1, 'ajhsak', linkedList, collection));
 
-function deleteNodeAt() {
-  
+function deleteNodeAt(index, linkedList, collection) {
+  let head = collection[linkedList];
+  if (index == 0) {
+
+  }
 }
