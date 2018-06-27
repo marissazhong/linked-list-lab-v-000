@@ -50,7 +50,10 @@ let collection = {rnadnm: {name: 'Alexandra', next: 'masjdrandm'},
 function indexAt(node, collection, linkedList) {
   let index = 0;
   let head = collection.linkedList;
-
+  let current_node = collection.head.next
+  if (head == node) {
+    return 0;
+  } else if ()
   while (current_node.next != null) {
     if ()
   }
