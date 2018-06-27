@@ -114,12 +114,11 @@ function deleteNodeAt(index, linkedList, collection) {
     return nil;
   } else if (index == 1) {
     head.next = node_before.next;
-    return head.next;
   } else {
     for (let i = 2; i < index; i++) {
       node_before = collection[node_before.next];
     }
-    new_node.next = node_before.next;
-    node_before.next = address;
+    node_before.next = ;
   }
+  return node_before.next;
 }
