@@ -50,7 +50,7 @@ function addressAt(index, linkedList, collection) {
 function indexAt(node, collection, linkedList) {
   let index = 0;
   let head = collection.linkedList;
-  let current_node = collection.head.next;
+  let current_node = collection[head.next];
   console.log(head,current_node);
   // if (head == node) {
   //   return 0;
