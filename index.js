@@ -69,7 +69,23 @@ function indexAt(node, collection, linkedList) {
 }
 
 function insertNodeAt(index, address, linkedList, collection) {
+  let head = collection[linkedList];
+  let new_node = collection[address];
+  let current_node = collection[head.next];
+  if (index == 0) {
+    new_node.next = linkedList;
+    head = new_node;
+    return linkedList;
+  } else if (index == 1) {
+    
+  }
+  current_node = collection[current_node.next];
 
+  /*
+  1. find node at index-1 (node_before)
+    1.a. set new_node.next to node_before.next
+    1.b. set node_before.next to address
+  */
 }
 
 let firstNode = {name: 'susie', next: 'rkjasj'}
@@ -82,7 +98,7 @@ let collection = {rkjasj: secondNode,
   ajhsak: newNode}
 let linkedList = 'whana'
 
-console.log(insertNodeAt(1, 'string', linkedList, collection));
+console.log(insertNodeAt(1, 'ajhsak', linkedList, collection));
 
 function deleteNodeAt() {
 
