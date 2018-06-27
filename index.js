@@ -68,6 +68,10 @@ function indexAt(node, collection, linkedList) {
   }
 }
 
+function insertNodeAt(index, address, linkedList, collection) {
+  
+}
+
 // let firstNode = {name: 'susie', next: 'rkjasj'}
 // let secondNode = {name: 'sam', next: 'asnan'}
 // let lastNode = {name: 'charlie', next: null}
@@ -75,10 +79,6 @@ function indexAt(node, collection, linkedList) {
 // let collection = {rkjasj: secondNode, asnan: lastNode, whana: firstNode}
 //
 // console.log(indexAt(lastNode, collection, linkedList));
-
-function insertNodeAt() {
-  
-}
 
 function deleteNodeAt() {
 
