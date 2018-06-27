@@ -1,8 +1,4 @@
 
-let collection = {rnadnm: {name: 'Alexandra', next: 'masjdrandm'},
-    masjdrandm: {name: 'Kirstin', next: 'ntrandm'},
-    ntrandm: {name: 'Juliet', next: null}
-  }
 
 function getName(node) {
   return node.name;
@@ -46,9 +42,24 @@ function addressAt(index, linkedList, collection) {
   }
 }
 
+let collection = {rnadnm: {name: 'Alexandra', next: 'masjdrandm'},
+    masjdrandm: {name: 'Kirstin', next: 'ntrandm'},
+    ntrandm: {name: 'Juliet', next: null}
+  }
+
 function indexAt(node, collection, linkedList) {
   let index = 0;
   let head = collection.linkedList;
 
-  while (current_node.next != null)
+  while (current_node.next != null) {
+    if ()
+  }
+}
+
+function insertNodeAt() {
+
+}
+
+function deleteNodeAt() {
+
 }
