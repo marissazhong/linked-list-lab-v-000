@@ -118,7 +118,7 @@ function deleteNodeAt(index, linkedList, collection) {
     for (let i = 2; i < index; i++) {
       node_before = collection[node_before.next];
     }
-    node_before.next = ;
+    node_before.next = collection[node_before.next][next];
   }
   return node_before.next;
 }
