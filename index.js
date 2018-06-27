@@ -74,7 +74,7 @@ let lastNode = {name: 'charlie', next: null}
 let linkedList = 'whana'
 let collection = {rkjasj: secondNode, asnan: lastNode, whana: firstNode}
 
-console.log(indexAt(secondNode, collection, linkedList));
+console.log(indexAt(lastNode, collection, linkedList));
 
 function insertNodeAt() {
 
