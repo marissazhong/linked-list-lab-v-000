@@ -107,14 +107,14 @@ function insertNodeAt(index, address, linkedList, collection) {
 // console.log(insertNodeAt(1, 'ajhsak', linkedList, collection));
 
 function deleteNodeAt(index, linkedList, collection) {
-  let head = collection[linkedList]; // First Node
-  let node_before = collection[head.next]; // Second Node
+  let head = collection[linkedList]; // index 0, First Node
+  let node_before = collection[head.next]; // index 1, Second Node
   if (index == 0) {
     head = node_before;
     return nil;
   } else if (index == 1) {
     head.next = node_before.next;
-    head.next = address;
+    return head.next;
   } else {
     for (let i = 2; i < index; i++) {
       node_before = collection[node_before.next];
