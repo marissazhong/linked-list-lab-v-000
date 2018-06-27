@@ -50,14 +50,23 @@ let collection = {rnadnm: {name: 'Alexandra', next: 'masjdrandm'},
 function indexAt(node, collection, linkedList) {
   let index = 0;
   let head = collection.linkedList;
-  let current_node = collection.head.next
-  if (head == node) {
-    return 0;
-  } else if ()
-  while (current_node.next != null) {
-    if ()
-  }
+  let current_node = collection.head.next;
+  console.log(head,current_node);
+  // if (head == node) {
+  //   return 0;
+  // } else if ()
+  // while (current_node.next != null) {
+  //   if ()
+  // }
 }
+
+let firstNode = {name: 'susie', next: 'rkjasj'}
+let secondNode = {name: 'sam', next: 'asnan'}
+let lastNode = {name: 'charlie', next: null}
+let linkedList = 'whana'
+let collection = {rkjasj: secondNode, asnan: lastNode, whana: firstNode}
+
+console.log(indexAt(firstNode, collection, linkedList));
 
 function insertNodeAt() {
 
