@@ -71,7 +71,7 @@ function indexAt(node, collection, linkedList) {
 function insertNodeAt(index, address, linkedList, collection) {
   let head = collection[linkedList];
   let new_node = collection[address];
-  let current_node = collection[head.next];
+  let node_before = collection[head.next];
   if (index == 0) {
     new_node.next = linkedList;
     head = new_node;
@@ -80,8 +80,8 @@ function insertNodeAt(index, address, linkedList, collection) {
     new_node.next = head.next;
     head.next = address;
   } else {
-    for (let i = 2; i <= index; i++) {
-      current_node = collection[current_node.next];
+    for (let i = 1; i < index; i++) {
+      node_before = collection[node_before.next];
     }
   }
   current_node = collection[current_node.next];
