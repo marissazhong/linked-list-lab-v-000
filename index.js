@@ -48,16 +48,24 @@ function addressAt(index, linkedList, collection) {
 //   }
 
 function indexAt(node, collection, linkedList) {
-  let index = 0;
+  let index = 1;
   let head = collection[linkedList];
   let current_node = collection[head.next];
-  console.log(head,current_node);
-  // if (head == node) {
-  //   return 0;
-  // } else if ()
-  // while (current_node.next != null) {
-  //   if ()
-  // }
+  //console.log(head,current_node);
+  if (head == node) {
+    return 0;
+  } else if (current_node == node) {
+    return 1;
+  } else {
+    while (current_node.next != null) {
+      if (current_node == node) {
+        return index;
+      } else {
+        current_node = collection[current_node.next];
+        index++;
+      }
+    }
+  }
 }
 
 let firstNode = {name: 'susie', next: 'rkjasj'}
